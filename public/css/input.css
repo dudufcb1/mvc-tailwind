@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+}
+
+
+@layer components {
+  .alinear-elementos {
+    @apply mx-auto max-w-7xl px-8;
+  }
+  .divform{
+    @apply w-[90%] mx-auto;
+  }
+  .label{
+    @apply block text-sm font-medium leading-6 my-2;
+  }
+  .input{
+    @apply block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 my-2 h-8 md:h-[4rem];
+  }
+  .campo{
+    @apply w-[90%] mx-auto;
+  }
+  .boton{
+    @apply font-bold py-2 px-4 rounded-md;
+  }
+  .boton-block{
+    @apply font-bold py-2 px-4 rounded-md block w-full;
+  }
+  .selected-tab{
+    @apply bg-slate-200;
+  }
+}
